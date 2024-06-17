@@ -15,7 +15,7 @@ const TextWithVideo = () => {
         ></iframe>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default TextWithVideo
+export default TextWithVideo;
