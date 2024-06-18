@@ -3,10 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "concurrently \"pnpm:next:dev\" \"pnpm:slicemachine\" --names \"next,slicemachine\" --prefix-colors blue,magenta",
+    "next:dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "slicemachine": "start-slicemachine"
+    "lint": "next lint",
+    "slicemachine": "start-slicemachine",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "@prismicio/client": "^7.5.0",
@@ -21,6 +24,7 @@
   },
   "devDependencies": {
     "@slicemachine/adapter-next": "^0.3.41",
+    "concurrently": "^8.2.2",
     "slice-machine-ui": "^2.2.0"
   }
 }
