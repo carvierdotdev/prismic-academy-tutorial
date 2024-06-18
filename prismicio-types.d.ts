@@ -71,6 +71,51 @@ export type HomepageDocument<Lang extends string = string> =
 
 export type AllDocumentTypes = HomepageDocument;
 
+/**
+ * Primary content in *TextSlice → Default → Primary*
+ */
+export interface TextSliceSliceDefaultPrimary {
+  /**
+   * Text Field field in *TextSlice → Default → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: text_slice.default.primary.text_field
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  text_field: prismic.RichTextField;
+}
+
+/**
+ * Default variation for TextSlice Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type TextSliceSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<TextSliceSliceDefaultPrimary>,
+  never
+>;
+
+/**
+ * Slice variation for *TextSlice*
+ */
+type TextSliceSliceVariation = TextSliceSliceDefault;
+
+/**
+ * TextSlice Shared Slice
+ *
+ * - **API ID**: `text_slice`
+ * - **Description**: TextSlice
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type TextSliceSlice = prismic.SharedSlice<
+  "text_slice",
+  TextSliceSliceVariation
+>;
+
 declare module "@prismicio/client" {
   interface CreateClient {
     (
@@ -85,6 +130,10 @@ declare module "@prismicio/client" {
       HomepageDocumentData,
       HomepageDocumentDataSlicesSlice,
       AllDocumentTypes,
+      TextSliceSlice,
+      TextSliceSliceDefaultPrimary,
+      TextSliceSliceVariation,
+      TextSliceSliceDefault,
     };
   }
 }

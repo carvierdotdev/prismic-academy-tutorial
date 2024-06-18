@@ -1,0 +1,20 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"text_field": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Id magna enim adipisicing tempor commodo ea ut mollit occaecat do excepteur eu eu irure. Est est cupidatat in ea cillum aute."
+						}
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]
