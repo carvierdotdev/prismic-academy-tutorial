@@ -1,5 +1,5 @@
-import Image from 'next/image'
-import plants from '@/images/plants.png'
+import plants from "@/images/plants.png";
+import Image from "next/image";
 
 const SplitImageLeft = () => {
   return (
@@ -22,7 +22,7 @@ const SplitImageLeft = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default SplitImageLeft
+export default SplitImageLeft;

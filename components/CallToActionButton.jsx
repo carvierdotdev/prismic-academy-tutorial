@@ -1,4 +1,4 @@
-import Button from './Button'
+import Button from "./Button";
 
 const CallToActionButton = () => {
   return (
@@ -20,7 +20,7 @@ const CallToActionButton = () => {
         />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default CallToActionButton
+export default CallToActionButton;

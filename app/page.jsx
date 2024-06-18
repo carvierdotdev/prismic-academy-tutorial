@@ -1,14 +1,14 @@
-import TextCenter from '@/components/TextCenter'
-import CallToActionButton from '@/components/CallToActionButton'
-import SplitImageLeft from '@/components/SplitImageLeft'
-import SplitButtonLeft from '@/components/SplitButtonLeft'
-import Hero from '@/components/Hero'
+import CallToActionButton from "@/components/CallToActionButton";
+import Hero from "@/components/Hero";
+import SplitButtonLeft from "@/components/SplitButtonLeft";
+import SplitImageLeft from "@/components/SplitImageLeft";
+import TextCenter from "@/components/TextCenter";
 
 export const metadata = {
-  title: 'EIE - Engineering Intelligent Environments',
+  title: "EIE - Engineering Intelligent Environments",
   description:
-    'Farming solutions start-up that aims to revolutionize the way farmers work.',
-}
+    "Farming solutions start-up that aims to revolutionize the way farmers work.",
+};
 
 export default function Home() {
   return (
@@ -19,5 +19,5 @@ export default function Home() {
       <SplitButtonLeft />
       <TextCenter />
     </main>
-  )
+  );
 }

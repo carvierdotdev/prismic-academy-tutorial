@@ -1,6 +1,6 @@
-import Image from 'next/image'
-import Button from './Button'
-import ronald from '@/images/ronald.png'
+import ronald from "@/images/ronald.png";
+import Image from "next/image";
+import Button from "./Button";
 
 const Hero = () => {
   return (
@@ -26,7 +26,7 @@ const Hero = () => {
         />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

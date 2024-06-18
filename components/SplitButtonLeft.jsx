@@ -1,6 +1,6 @@
-import Image from 'next/image'
-import Button from './Button'
-import ronda from '@/images/ronda.png'
+import ronda from "@/images/ronda.png";
+import Image from "next/image";
+import Button from "./Button";
 
 const SplitButtonLeft = () => {
   return (
@@ -24,7 +24,7 @@ const SplitButtonLeft = () => {
         />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default SplitButtonLeft
+export default SplitButtonLeft;

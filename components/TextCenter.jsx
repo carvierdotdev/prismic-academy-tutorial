@@ -14,7 +14,7 @@ const TextCenter = () => {
         </p>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default TextCenter
+export default TextCenter;
