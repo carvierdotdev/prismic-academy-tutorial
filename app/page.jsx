@@ -3,14 +3,27 @@ import Hero from "@/components/Hero";
 import SplitButtonLeft from "@/components/SplitButtonLeft";
 import SplitImageLeft from "@/components/SplitImageLeft";
 import TextCenter from "@/components/TextCenter";
+import { createClient } from "@/prismicio";
 
-export const metadata = {
-  title: "EIE - Engineering Intelligent Environments",
-  description:
-    "Farming solutions start-up that aims to revolutionize the way farmers work.",
+const queryHomepage = () => {
+  const client = createClient();
+  return client.getSingle("homepage");
 };
 
-export default function Home() {
+export async function generateMetadata() {
+  const page = await queryHomepage();
+
+  return {
+    title: "EIE - Engineering Intelligent Environments",
+    description:
+      "Farming solutions start-up that aims to revolutionize the way farmers work.",
+  };
+}
+
+export default async function Home() {
+  const page = await queryHomepage();
+  console.log(page);
+
   return (
     <main>
       <Hero />
