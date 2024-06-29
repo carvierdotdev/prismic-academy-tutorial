@@ -1,10 +1,12 @@
-import CallToActionButton from "@/components/CallToActionButton";
-import Hero from "@/components/Hero";
-import SplitButtonLeft from "@/components/SplitButtonLeft";
-import SplitImageLeft from "@/components/SplitImageLeft";
-import TextCenter from "@/components/TextCenter";
+// import CallToActionButton from "@/components/CallToActionButton";
+// import Hero from "@/components/Hero";
+// import SplitButtonLeft from "@/components/SplitButtonLeft";
+// import SplitImageLeft from "@/components/SplitImageLeft";
+// import TextCenter from "@/components/TextCenter";
 import { createClient } from "@/prismicio";
+import { components } from "@/slices";
 import * as prismic from "@prismicio/client";
+import { SliceZone } from "@prismicio/react";
 
 const queryHomepage = () => {
   const client = createClient();
@@ -39,11 +41,12 @@ export default async function Home() {
 
   return (
     <main>
-      <Hero />
+      <SliceZone components={components} slices={page.data.slices} />
+      {/* <Hero />
       <CallToActionButton />
       <SplitImageLeft />
       <SplitButtonLeft />
-      <TextCenter />
+      <TextCenter /> */}
     </main>
   );
 }
