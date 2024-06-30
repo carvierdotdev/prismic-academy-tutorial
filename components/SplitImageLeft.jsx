@@ -1,24 +1,29 @@
-import plants from "@/images/plants.png";
 import Image from "next/image";
+import Button from "./Button";
 
 const SplitImageLeft = () => {
   return (
     <div className="flex justify-center items-center w-screen bg-greenGrey">
       <div className="container grid grid-cols-1 md:grid-cols-2 gap-24 items-center min-h-[512px] py-24">
         <Image
-          src={plants}
+          src="/app-launch.svg"
+          width={1054}
+          height={672}
           alt="The future"
           className="w-full h-auto rounded-3xl"
         />
         <div className="flex flex-col gap-4 items-start">
-          <h3>A Revolution in Agriculture!</h3>
+          <h3>Gestión de plataformas sociales</h3>
           <p>
-            Discover eie.io&apos;s Smart Seeds, a groundbreaking innovation in
-            agriculture. Our AI-enhanced, data-driven seeds optimize resource
-            usage, increase yield, and resist pests and diseases. Join the
-            future of sustainable farming with Smart Seeds. Learn more about our
-            revolutionary technology today.
+            Captamos la esencia de tu marca y la transmitimos a través de
+            contenido visual y escrito que resuena con tu audiencia, asegurando
+            que tu mensaje no solo sea visto, sino también recordado.
           </p>
+          <Button
+            link="https://wa.me/+5350692027"
+            label="Empieza a destacar en las redes.."
+            white={false}
+          />
         </div>
       </div>
     </div>

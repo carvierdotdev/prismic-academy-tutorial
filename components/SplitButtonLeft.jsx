@@ -1,4 +1,3 @@
-import ronda from "@/images/ronda.png";
 import Image from "next/image";
 import Button from "./Button";
 
@@ -7,18 +6,21 @@ const SplitButtonLeft = () => {
     <div className="flex justify-center items-center w-screen bg-grey">
       <div className="container grid grid-cols-1 md:grid-cols-2 gap-24 min-h-[514px] items-center py-24">
         <div className="flex flex-col gap-4 items-start">
-          <h3>Share team inboxes</h3>
+          <h3>Diseñamos Tu Presencia Digital</h3>
           <p>
-            In addition, our tractors feature IoT connectivity, linking them
-            with our Smart Seeds and cloud-based platform. This means they can
-            respond to real-time data about crop growth, soil conditions, and
-            weather forecasts, optimizing their operations to boost productivity
-            and sustainability.
+            Transformamos tus ideas en realidad digital. Creamos sitios web que
+            no solo lucen espectaculares, sino que también ofrecen una
+            experiencia de usuario excepcional. Nos enfocamos en la
+            funcionalidad, el diseño responsive y la optimización SEO para
+            asegurar que tu sitio web destaque en la era digital. Conecta con
+            nosotros y da el primer paso hacia una presencia online inolvidable.
           </p>
-          <Button link="https://www.smartseeds.fr/" label="Learn More" />
+          <Button link="#" label="Empieza tu Proyecto Web" />
         </div>
         <Image
-          src={ronda}
+          src="/work-party.svg"
+          width={1054}
+          height={719}
           alt="Mrs. McDonald"
           className="w-full h-auto rounded-3xl"
         />
