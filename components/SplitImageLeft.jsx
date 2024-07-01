@@ -6,10 +6,10 @@ const SplitImageLeft = () => {
     <div className="flex justify-center items-center w-screen bg-greenGrey">
       <div className="container grid grid-cols-1 md:grid-cols-2 gap-24 items-center min-h-[512px] py-24">
         <Image
-          src="/app-launch.svg"
+          src="/girl-influencer.svg"
           width={1054}
           height={672}
-          alt="The future"
+          alt="Redes sociales"
           className="w-full h-auto rounded-3xl"
         />
         <div className="flex flex-col gap-4 items-start">
