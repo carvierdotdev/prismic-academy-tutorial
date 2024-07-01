@@ -10,18 +10,21 @@ const SplitButtonLeft = () => {
           <p>
             Transformamos tus ideas en realidad digital. Creamos sitios web que
             no solo lucen espectaculares, sino que también ofrecen una
-            experiencia de usuario excepcional. Nos enfocamos en la
+            experiencia de usuario excepcional. <br></br> Nos enfocamos en la
             funcionalidad, el diseño responsive y la optimización SEO para
             asegurar que tu sitio web destaque en la era digital. Conecta con
             nosotros y da el primer paso hacia una presencia online inolvidable.
           </p>
-          <Button link="#" label="Empieza tu Proyecto Web" />
+          <Button
+            link="https://wa.me/+5363669268"
+            label="Empieza tu Proyecto Web"
+          />
         </div>
         <Image
-          src="/work-party.svg"
+          src="/web-design.svg"
           width={1054}
           height={719}
-          alt="Mrs. McDonald"
+          alt="Diseño web"
           className="w-full h-auto rounded-3xl"
         />
       </div>

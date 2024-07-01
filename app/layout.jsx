@@ -14,7 +14,7 @@ const space_grotesk = Space_Grotesk({
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body>
         <div className={`${inter.variable} ${space_grotesk.variable}`}>
           {children}

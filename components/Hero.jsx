@@ -24,7 +24,7 @@ const Hero = () => {
           src="/product-launch.svg"
           width={1052}
           height={727}
-          alt="Mr. McDonald"
+          alt="Icono del lanzamiento de un producto"
           className="w-full h-auto rounded-3xl overflow-hidden"
         />
       </div>

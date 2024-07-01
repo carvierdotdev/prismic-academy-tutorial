@@ -25,6 +25,11 @@ import SplitImageLeft from "@/components/SplitImageLeft";
 //   };
 // }
 
+export const metadata = {
+  title:
+    "Pymeforma Studio. Ayudamos con la presencia online de emprendedores y pequeñas empresas.",
+};
+
 export default async function Home() {
   // const page = await queryHomepage();
   // console.log("---------------------PAGE---------------------");
